@@ -47,12 +47,13 @@ if (isset($_SESSION['login_id']))
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <!-- /.col -->
-                  <div class="col-4 m-auto">
+                <div class="row justify-content-center">
+                  <div class="col-4">
                     <button type="submit" class="btn btn-block bg-gradient-success">Sign In</button>
                   </div>
-                  <!-- /.col -->
+                  <div class="col-4">
+                    <a href="https://fastway.md-al-amin.com/fastway" target="_blank" class="btn btn-block bg-gradient-primary">Home Page</a>
+                  </div>
                 </div>
               </form>
             </div>

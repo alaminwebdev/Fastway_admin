@@ -2,12 +2,17 @@
 if (!isset($_SESSION)) {
   session_start();
 }
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php
-if (!isset($_SESSION['login_id']))
-  header('location:login.php');
+if (!isset($_SESSION['login_id'])) {
+  //header('location:login.php');
+  echo '<script>window.location.href = "login.php";</script>';
+  exit;
+}
 include 'db_connect.php';
 ob_start();
 if (!isset($_SESSION['system'])) {
